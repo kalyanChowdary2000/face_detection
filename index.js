@@ -16,7 +16,7 @@ async function run() {
   await faceapi.nets.ageGenderNet.loadFromDisk(modelPath); // Age and gender model
 
   // Load and process an image
-  const imgBuffer = fs.readFileSync('./sriju.jpeg'); // Replace with your image path
+  const imgBuffer = fs.readFileSync('./abhishek.jpeg'); // Replace with your image path
   const img = await canvas.loadImage(imgBuffer);
 
   // Detect faces with landmarks, descriptors, age, and gender
